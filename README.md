@@ -1,3 +1,5 @@
+[![.github/workflows/build.yaml](https://github.com/dnlbauer/corax-zmk-config/actions/workflows/build.yaml/badge.svg)](https://github.com/dnlbauer/corax-zmk-config/actions/workflows/build.yaml)
+
 # Firmware for the Corax keyboard
 
 This is the [ZMK](https://zmk.dev/) firmware for the [Corax](https://github.com/dnlbauer/corax-keyboard).
