@@ -183,14 +183,15 @@
         // double mod
         double_layer {
             display-name = "Double";
+            
             bindings = <
-                &none  &none  &none   &none   &none                   &none   &none         &none     &none       &none
-        &trans  &none  &kp F7 &kp F8  &kp F9  &kp F10                 &none   &none         &none     &none       &none  &trans
-&trans  &trans  &none  &kp F1 &kp F2  &kp F3  &none                   &none   &to COLEMAK   &to WASD  &to QWERTY  &none  &trans  &trans
-        &trans  &none  &kp F4 &kp F5  &kp F6  &none   &trans  &trans  &none   &none         &none     &none       &trans &trans
-                              &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  
+                         &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)                                          &kp LG(N5)       &kp LG(N6)    &kp LG(N7)     &kp LG(N8)   &kp LG(N9)   &kp LG(N0)
+         &kp TAB         &kp LG(Q)   &kp LG(W)   &kp LG(F)     &kp LG(P)     &kp LG(B)                                 &kp LG(J)        &kp LG(L)     &kp LG(U)      &kp LG(Y)    &ud_sqt  &kp RC(RA(F13)) 
+&kp ESC  &kp LCTRL       &kp LG(A)   &kp LG(R)   &kp LG(S)     &kp LG(T)     &kp LG(G)                                 &kp LG(M)        &kp LG(N)     &kp LG(E)      &kp LG(I)    &kp LG(O)    &kp LG(BSPC)         &kp RC(RA(F13))
+         &kp LSHFT       &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(D)     &kp LG(V)          &kp C_MUTE  &kp C_PP   &kp LG(K)        &kp LG(H)     &kp LG(COMMA)  &kp LG(DOT)  &kp LG(DEL)  &mt RSHFT RBRC
+                                         &kp LGUI  &kp LALT  &lthp SYM ESC  &kp SPACE   &kp ENTER  &lt NAV ESC  &kp RALT  &kp RGUI
             >;
-
+            
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
         };
 
