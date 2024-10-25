@@ -9,8 +9,7 @@
 #define WASD 2
 #define SYM 3
 #define NAV 4
-#define DOUBLE 5
-#define ADJUST 6
+#define ADJUST 5
 
 // additional caps word keys
 &caps_word {
@@ -160,7 +159,7 @@
         &trans  &none   &kp BSLH   &kp PRCNT  &kp DLLR   &kp RA(LS(S))                    &none       &kp PIPE  &ud_caret  &kp SLASH  &kp RA(N5)  &kp F11
 &trans  &trans  &none   &kp LPAR   &kp RPAR   &kp COLON  &asc_arr                         &none       &ud_dqt   &kp UNDER  &kp LBKT   &kp RBKT    &kp F12  &trans
         &trans  &none   &ud_grave  &kp AT     &kp AMPS   &kp RC(RA(F14))  &trans  &trans  &none       &kp HASH  &kp QMARK  &kp EXCL   &trans      &trans
-                                   &trans     &trans     &trans           &trans  &trans  &mo DOUBLE  &trans    &trans
+                                   &trans     &trans     &trans           &trans  &trans  &kp LGUI    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -174,21 +173,7 @@
         &trans  &kp MINUS  &kp N7  &kp N8  &kp N9         &kp STAR                       &kp INS          &kp HOME   &kp END    &kp PSCRN  &none     &trans
 &trans  &trans  &kp DOT    &kp N1  &kp N2  &kp N3         &kp EQUAL                      &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI  &trans  &trans
         &trans  &ud_tilde  &kp N4  &kp N5  &kp N6         &kp PLUS       &trans  &trans  &kp PAUSE_BREAK  &kp PG_DN  &kp PG_UP  &none      &trans    &trans
-                                   &trans  &mt LALT MINUS &lt DOUBLE N0  &trans  &trans  &trans           &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
-        };
-
-        // double mod
-        double_layer {
-            display-name = "Double";
-            bindings = <
-                &none  &none  &none   &none   &none                   &none   &none         &none     &none       &none
-        &trans  &none  &kp F7 &kp F8  &kp F9  &kp F10                 &none   &none         &none     &none       &none  &trans
-&trans  &trans  &none  &kp F1 &kp F2  &kp F3  &none                   &none   &to COLEMAK   &to WASD  &to QWERTY  &none  &trans  &trans
-        &trans  &none  &kp F4 &kp F5  &kp F6  &none   &trans  &trans  &none   &none         &none     &none       &trans &trans
-                              &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  
+                                   &trans  &mt LALT MINUS &mt LGUI N0  &trans  &trans  &trans           &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
