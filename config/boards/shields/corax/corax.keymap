@@ -7,8 +7,7 @@
 #define QWERTY 1
 #define WASD 2
 #define SYM 3
-#define NAV 4
-#define ADJUST 5
+
 // additional caps word keys
 &caps_word {
     continue-list = <UNDERSCORE MINUS LS(MINUS) UP DOWN LEFT RIGHT BSPC DEL>;
